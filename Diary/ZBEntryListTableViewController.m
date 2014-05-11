@@ -110,24 +110,24 @@
     return [sectionInfo name];
 }
 
-
-- (NSFetchRequest *)entryListFetchRequest {
+- (NSFetchRequest *)entryListFetchRequest
+{
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"ZBDiaryEntry"];
-    
     fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO]];
-    
     return fetchRequest;
 }
 
 - (NSFetchedResultsController *)fetchedResultsController {
-    if (_fetchedResultsController != nil) {
+    if (_fetchedResultsController != nil)
         return _fetchedResultsController;
-    }
     
     ZBCoreDataStack *coreStack = [ZBCoreDataStack defaultStack];
     NSFetchRequest *fetchRequest = [self entryListFetchRequest];
     
-    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:coreStack.managedObjectContext sectionNameKeyPath:@"sectionName" cacheName:nil];
+    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
+                                                                    managedObjectContext:coreStack.managedObjectContext
+                                                                      sectionNameKeyPath:@"sectionName"
+                                                                               cacheName:nil];
     
     _fetchedResultsController.delegate = self;
     
