@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31140E80191F128900ACF7FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31140E7F191F128900ACF7FB /* Foundation.framework */; };
+		31140E82191F128900ACF7FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31140E81191F128900ACF7FB /* CoreGraphics.framework */; };
+		31140E84191F128900ACF7FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31140E83191F128900ACF7FB /* UIKit.framework */; };
+		31140E86191F128900ACF7FB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31140E85191F128900ACF7FB /* CoreData.framework */; };
+		31140E8C191F128900ACF7FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31140E8A191F128900ACF7FB /* InfoPlist.strings */; };
+		31140E8E191F128900ACF7FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31140E8D191F128900ACF7FB /* main.m */; };
+		31140E92191F128900ACF7FB /* ZBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31140E91191F128900ACF7FB /* ZBAppDelegate.m */; };
+		31140E95191F128900ACF7FB /* Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31140E93191F128900ACF7FB /* Diary.xcdatamodeld */; };
+		31140E97191F128900ACF7FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31140E96191F128900ACF7FB /* Images.xcassets */; };
+		31140E9E191F128900ACF7FB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31140E9D191F128900ACF7FB /* XCTest.framework */; };
+		31140E9F191F128900ACF7FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31140E7F191F128900ACF7FB /* Foundation.framework */; };
+		31140EA0191F128900ACF7FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31140E83191F128900ACF7FB /* UIKit.framework */; };
+		31140EA1191F128900ACF7FB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31140E85191F128900ACF7FB /* CoreData.framework */; };
+		31140EA9191F128900ACF7FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31140EA7191F128900ACF7FB /* InfoPlist.strings */; };
+		31140EAB191F128900ACF7FB /* DiaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31140EAA191F128900ACF7FB /* DiaryTests.m */; };
+		31140EB6191F147100ACF7FB /* ZBCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 31140EB5191F147100ACF7FB /* ZBCoreDataStack.m */; };
+		31140EB9191F179200ACF7FB /* ZBDiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 31140EB8191F179200ACF7FB /* ZBDiaryEntry.m */; };
+		31140EBB191F199300ACF7FB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31140EBA191F199300ACF7FB /* MainStoryboard.storyboard */; };
+		31140EBE191F1B1A00ACF7FB /* ZBEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31140EBD191F1B1A00ACF7FB /* ZBEntryViewController.m */; };
+		31140EC1191F1FFE00ACF7FB /* ZBEntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31140EC0191F1FFE00ACF7FB /* ZBEntryListTableViewController.m */; };
+		31140EC4191F2F4800ACF7FB /* ZBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31140EC3191F2F4800ACF7FB /* ZBNavigationController.m */; };
+		31140EC7191F3C2200ACF7FB /* ZBEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31140EC6191F3C2200ACF7FB /* ZBEntryCell.m */; };
+		31140EC9191F542D00ACF7FB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31140EC8191F542D00ACF7FB /* QuartzCore.framework */; };
+		31140ECB191F556A00ACF7FB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31140ECA191F556A00ACF7FB /* CoreLocation.framework */; };
+		31140ECD191F603900ACF7FB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 31140ECC191F603900ACF7FB /* Settings.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31140EA2191F128900ACF7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31140E74191F128900ACF7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31140E7B191F128900ACF7FB;
+			remoteInfo = Diary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31140E7C191F128900ACF7FB /* Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31140E7F191F128900ACF7FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		31140E81191F128900ACF7FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		31140E83191F128900ACF7FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		31140E85191F128900ACF7FB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		31140E89191F128900ACF7FB /* Diary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Diary-Info.plist"; sourceTree = "<group>"; };
+		31140E8B191F128900ACF7FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31140E8D191F128900ACF7FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31140E8F191F128900ACF7FB /* Diary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Diary-Prefix.pch"; sourceTree = "<group>"; };
+		31140E90191F128900ACF7FB /* ZBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBAppDelegate.h; sourceTree = "<group>"; };
+		31140E91191F128900ACF7FB /* ZBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBAppDelegate.m; sourceTree = "<group>"; };
+		31140E94191F128900ACF7FB /* Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diary.xcdatamodel; sourceTree = "<group>"; };
+		31140E96191F128900ACF7FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		31140E9C191F128900ACF7FB /* DiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31140E9D191F128900ACF7FB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		31140EA6191F128900ACF7FB /* DiaryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiaryTests-Info.plist"; sourceTree = "<group>"; };
+		31140EA8191F128900ACF7FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31140EAA191F128900ACF7FB /* DiaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaryTests.m; sourceTree = "<group>"; };
+		31140EB4191F147100ACF7FB /* ZBCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBCoreDataStack.h; sourceTree = "<group>"; };
+		31140EB5191F147100ACF7FB /* ZBCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBCoreDataStack.m; sourceTree = "<group>"; };
+		31140EB7191F179200ACF7FB /* ZBDiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBDiaryEntry.h; sourceTree = "<group>"; };
+		31140EB8191F179200ACF7FB /* ZBDiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBDiaryEntry.m; sourceTree = "<group>"; };
+		31140EBA191F199300ACF7FB /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		31140EBC191F1B1A00ACF7FB /* ZBEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBEntryViewController.h; sourceTree = "<group>"; };
+		31140EBD191F1B1A00ACF7FB /* ZBEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBEntryViewController.m; sourceTree = "<group>"; };
+		31140EBF191F1FFE00ACF7FB /* ZBEntryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBEntryListTableViewController.h; sourceTree = "<group>"; };
+		31140EC0191F1FFE00ACF7FB /* ZBEntryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBEntryListTableViewController.m; sourceTree = "<group>"; };
+		31140EC2191F2F4800ACF7FB /* ZBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBNavigationController.h; sourceTree = "<group>"; };
+		31140EC3191F2F4800ACF7FB /* ZBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBNavigationController.m; sourceTree = "<group>"; };
+		31140EC5191F3C2200ACF7FB /* ZBEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBEntryCell.h; sourceTree = "<group>"; };
+		31140EC6191F3C2200ACF7FB /* ZBEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBEntryCell.m; sourceTree = "<group>"; };
+		31140EC8191F542D00ACF7FB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		31140ECA191F556A00ACF7FB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		31140ECC191F603900ACF7FB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31140E79191F128900ACF7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31140ECB191F556A00ACF7FB /* CoreLocation.framework in Frameworks */,
+				31140EC9191F542D00ACF7FB /* QuartzCore.framework in Frameworks */,
+				31140E82191F128900ACF7FB /* CoreGraphics.framework in Frameworks */,
+				31140E86191F128900ACF7FB /* CoreData.framework in Frameworks */,
+				31140E84191F128900ACF7FB /* UIKit.framework in Frameworks */,
+				31140E80191F128900ACF7FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31140E99191F128900ACF7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31140E9E191F128900ACF7FB /* XCTest.framework in Frameworks */,
+				31140EA1191F128900ACF7FB /* CoreData.framework in Frameworks */,
+				31140EA0191F128900ACF7FB /* UIKit.framework in Frameworks */,
+				31140E9F191F128900ACF7FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31140E73191F128900ACF7FB = {
+			isa = PBXGroup;
+			children = (
+				31140ECC191F603900ACF7FB /* Settings.bundle */,
+				31140E87191F128900ACF7FB /* Diary */,
+				31140EA4191F128900ACF7FB /* DiaryTests */,
+				31140E7E191F128900ACF7FB /* Frameworks */,
+				31140E7D191F128900ACF7FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31140E7D191F128900ACF7FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31140E7C191F128900ACF7FB /* Diary.app */,
+				31140E9C191F128900ACF7FB /* DiaryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31140E7E191F128900ACF7FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31140ECA191F556A00ACF7FB /* CoreLocation.framework */,
+				31140EC8191F542D00ACF7FB /* QuartzCore.framework */,
+				31140E7F191F128900ACF7FB /* Foundation.framework */,
+				31140E81191F128900ACF7FB /* CoreGraphics.framework */,
+				31140E83191F128900ACF7FB /* UIKit.framework */,
+				31140E85191F128900ACF7FB /* CoreData.framework */,
+				31140E9D191F128900ACF7FB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31140E87191F128900ACF7FB /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				31140EB4191F147100ACF7FB /* ZBCoreDataStack.h */,
+				31140EB5191F147100ACF7FB /* ZBCoreDataStack.m */,
+				31140EBF191F1FFE00ACF7FB /* ZBEntryListTableViewController.h */,
+				31140EC0191F1FFE00ACF7FB /* ZBEntryListTableViewController.m */,
+				31140E90191F128900ACF7FB /* ZBAppDelegate.h */,
+				31140E91191F128900ACF7FB /* ZBAppDelegate.m */,
+				31140E96191F128900ACF7FB /* Images.xcassets */,
+				31140E93191F128900ACF7FB /* Diary.xcdatamodeld */,
+				31140EB7191F179200ACF7FB /* ZBDiaryEntry.h */,
+				31140EB8191F179200ACF7FB /* ZBDiaryEntry.m */,
+				31140EBA191F199300ACF7FB /* MainStoryboard.storyboard */,
+				31140EC5191F3C2200ACF7FB /* ZBEntryCell.h */,
+				31140EC6191F3C2200ACF7FB /* ZBEntryCell.m */,
+				31140EBC191F1B1A00ACF7FB /* ZBEntryViewController.h */,
+				31140EBD191F1B1A00ACF7FB /* ZBEntryViewController.m */,
+				31140E88191F128900ACF7FB /* Supporting Files */,
+				31140EC2191F2F4800ACF7FB /* ZBNavigationController.h */,
+				31140EC3191F2F4800ACF7FB /* ZBNavigationController.m */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		31140E88191F128900ACF7FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31140E89191F128900ACF7FB /* Diary-Info.plist */,
+				31140E8A191F128900ACF7FB /* InfoPlist.strings */,
+				31140E8D191F128900ACF7FB /* main.m */,
+				31140E8F191F128900ACF7FB /* Diary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31140EA4191F128900ACF7FB /* DiaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				31140EAA191F128900ACF7FB /* DiaryTests.m */,
+				31140EA5191F128900ACF7FB /* Supporting Files */,
+			);
+			path = DiaryTests;
+			sourceTree = "<group>";
+		};
+		31140EA5191F128900ACF7FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31140EA6191F128900ACF7FB /* DiaryTests-Info.plist */,
+				31140EA7191F128900ACF7FB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31140E7B191F128900ACF7FB /* Diary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31140EAE191F128900ACF7FB /* Build configuration list for PBXNativeTarget "Diary" */;
+			buildPhases = (
+				31140E78191F128900ACF7FB /* Sources */,
+				31140E79191F128900ACF7FB /* Frameworks */,
+				31140E7A191F128900ACF7FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Diary;
+			productName = Diary;
+			productReference = 31140E7C191F128900ACF7FB /* Diary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31140E9B191F128900ACF7FB /* DiaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31140EB1191F128900ACF7FB /* Build configuration list for PBXNativeTarget "DiaryTests" */;
+			buildPhases = (
+				31140E98191F128900ACF7FB /* Sources */,
+				31140E99191F128900ACF7FB /* Frameworks */,
+				31140E9A191F128900ACF7FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31140EA3191F128900ACF7FB /* PBXTargetDependency */,
+			);
+			name = DiaryTests;
+			productName = DiaryTests;
+			productReference = 31140E9C191F128900ACF7FB /* DiaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31140E74191F128900ACF7FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = withtrip;
+				TargetAttributes = {
+					31140E9B191F128900ACF7FB = {
+						TestTargetID = 31140E7B191F128900ACF7FB;
+					};
+				};
+			};
+			buildConfigurationList = 31140E77191F128900ACF7FB /* Build configuration list for PBXProject "Diary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 31140E73191F128900ACF7FB;
+			productRefGroup = 31140E7D191F128900ACF7FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31140E7B191F128900ACF7FB /* Diary */,
+				31140E9B191F128900ACF7FB /* DiaryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31140E7A191F128900ACF7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31140ECD191F603900ACF7FB /* Settings.bundle in Resources */,
+				31140EBB191F199300ACF7FB /* MainStoryboard.storyboard in Resources */,
+				31140E8C191F128900ACF7FB /* InfoPlist.strings in Resources */,
+				31140E97191F128900ACF7FB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31140E9A191F128900ACF7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31140EA9191F128900ACF7FB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31140E78191F128900ACF7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31140EB9191F179200ACF7FB /* ZBDiaryEntry.m in Sources */,
+				31140E95191F128900ACF7FB /* Diary.xcdatamodeld in Sources */,
+				31140EB6191F147100ACF7FB /* ZBCoreDataStack.m in Sources */,
+				31140EC4191F2F4800ACF7FB /* ZBNavigationController.m in Sources */,
+				31140EC1191F1FFE00ACF7FB /* ZBEntryListTableViewController.m in Sources */,
+				31140E92191F128900ACF7FB /* ZBAppDelegate.m in Sources */,
+				31140EBE191F1B1A00ACF7FB /* ZBEntryViewController.m in Sources */,
+				31140E8E191F128900ACF7FB /* main.m in Sources */,
+				31140EC7191F3C2200ACF7FB /* ZBEntryCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31140E98191F128900ACF7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31140EAB191F128900ACF7FB /* DiaryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31140EA3191F128900ACF7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31140E7B191F128900ACF7FB /* Diary */;
+			targetProxy = 31140EA2191F128900ACF7FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31140E8A191F128900ACF7FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31140E8B191F128900ACF7FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		31140EA7191F128900ACF7FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31140EA8191F128900ACF7FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31140EAC191F128900ACF7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		31140EAD191F128900ACF7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31140EAF191F128900ACF7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Diary/Diary-Prefix.pch";
+				INFOPLIST_FILE = "Diary/Diary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		31140EB0191F128900ACF7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Diary/Diary-Prefix.pch";
+				INFOPLIST_FILE = "Diary/Diary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		31140EB2191F128900ACF7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Diary.app/Diary";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Diary/Diary-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DiaryTests/DiaryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		31140EB3191F128900ACF7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Diary.app/Diary";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Diary/Diary-Prefix.pch";
+				INFOPLIST_FILE = "DiaryTests/DiaryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31140E77191F128900ACF7FB /* Build configuration list for PBXProject "Diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31140EAC191F128900ACF7FB /* Debug */,
+				31140EAD191F128900ACF7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31140EAE191F128900ACF7FB /* Build configuration list for PBXNativeTarget "Diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31140EAF191F128900ACF7FB /* Debug */,
+				31140EB0191F128900ACF7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		31140EB1191F128900ACF7FB /* Build configuration list for PBXNativeTarget "DiaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31140EB2191F128900ACF7FB /* Debug */,
+				31140EB3191F128900ACF7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		31140E93191F128900ACF7FB /* Diary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				31140E94191F128900ACF7FB /* Diary.xcdatamodel */,
+			);
+			currentVersion = 31140E94191F128900ACF7FB /* Diary.xcdatamodel */;
+			path = Diary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 31140E74191F128900ACF7FB /* Project object */;
+}
