@@ -57,25 +57,25 @@
 		31140E90191F128900ACF7FB /* ZBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBAppDelegate.h; sourceTree = "<group>"; };
 		31140E91191F128900ACF7FB /* ZBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBAppDelegate.m; sourceTree = "<group>"; };
 		31140E94191F128900ACF7FB /* Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diary.xcdatamodel; sourceTree = "<group>"; };
-		31140E96191F128900ACF7FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		31140E96191F128900ACF7FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Diary/Images.xcassets; sourceTree = "<group>"; };
 		31140E9C191F128900ACF7FB /* DiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31140E9D191F128900ACF7FB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		31140EA6191F128900ACF7FB /* DiaryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiaryTests-Info.plist"; sourceTree = "<group>"; };
 		31140EA8191F128900ACF7FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31140EAA191F128900ACF7FB /* DiaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaryTests.m; sourceTree = "<group>"; };
-		31140EB4191F147100ACF7FB /* ZBCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBCoreDataStack.h; sourceTree = "<group>"; };
-		31140EB5191F147100ACF7FB /* ZBCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBCoreDataStack.m; sourceTree = "<group>"; };
-		31140EB7191F179200ACF7FB /* ZBDiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBDiaryEntry.h; sourceTree = "<group>"; };
-		31140EB8191F179200ACF7FB /* ZBDiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBDiaryEntry.m; sourceTree = "<group>"; };
-		31140EBA191F199300ACF7FB /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		31140EBC191F1B1A00ACF7FB /* ZBEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBEntryViewController.h; sourceTree = "<group>"; };
-		31140EBD191F1B1A00ACF7FB /* ZBEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBEntryViewController.m; sourceTree = "<group>"; };
-		31140EBF191F1FFE00ACF7FB /* ZBEntryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBEntryListTableViewController.h; sourceTree = "<group>"; };
-		31140EC0191F1FFE00ACF7FB /* ZBEntryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBEntryListTableViewController.m; sourceTree = "<group>"; };
-		31140EC2191F2F4800ACF7FB /* ZBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBNavigationController.h; sourceTree = "<group>"; };
-		31140EC3191F2F4800ACF7FB /* ZBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBNavigationController.m; sourceTree = "<group>"; };
-		31140EC5191F3C2200ACF7FB /* ZBEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBEntryCell.h; sourceTree = "<group>"; };
-		31140EC6191F3C2200ACF7FB /* ZBEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBEntryCell.m; sourceTree = "<group>"; };
+		31140EB4191F147100ACF7FB /* ZBCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZBCoreDataStack.h; path = Diary/ZBCoreDataStack.h; sourceTree = "<group>"; };
+		31140EB5191F147100ACF7FB /* ZBCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZBCoreDataStack.m; path = Diary/ZBCoreDataStack.m; sourceTree = "<group>"; };
+		31140EB7191F179200ACF7FB /* ZBDiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZBDiaryEntry.h; path = Diary/ZBDiaryEntry.h; sourceTree = "<group>"; };
+		31140EB8191F179200ACF7FB /* ZBDiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZBDiaryEntry.m; path = Diary/ZBDiaryEntry.m; sourceTree = "<group>"; };
+		31140EBA191F199300ACF7FB /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = Diary/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		31140EBC191F1B1A00ACF7FB /* ZBEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZBEntryViewController.h; path = Diary/ZBEntryViewController.h; sourceTree = "<group>"; };
+		31140EBD191F1B1A00ACF7FB /* ZBEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZBEntryViewController.m; path = Diary/ZBEntryViewController.m; sourceTree = "<group>"; };
+		31140EBF191F1FFE00ACF7FB /* ZBEntryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZBEntryListTableViewController.h; path = Diary/ZBEntryListTableViewController.h; sourceTree = "<group>"; };
+		31140EC0191F1FFE00ACF7FB /* ZBEntryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZBEntryListTableViewController.m; path = Diary/ZBEntryListTableViewController.m; sourceTree = "<group>"; };
+		31140EC2191F2F4800ACF7FB /* ZBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZBNavigationController.h; path = Diary/ZBNavigationController.h; sourceTree = "<group>"; };
+		31140EC3191F2F4800ACF7FB /* ZBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZBNavigationController.m; path = Diary/ZBNavigationController.m; sourceTree = "<group>"; };
+		31140EC5191F3C2200ACF7FB /* ZBEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZBEntryCell.h; path = Diary/ZBEntryCell.h; sourceTree = "<group>"; };
+		31140EC6191F3C2200ACF7FB /* ZBEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZBEntryCell.m; path = Diary/ZBEntryCell.m; sourceTree = "<group>"; };
 		31140EC8191F542D00ACF7FB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		31140ECA191F556A00ACF7FB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		31140ECC191F603900ACF7FB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -112,6 +112,9 @@
 		31140E73191F128900ACF7FB = {
 			isa = PBXGroup;
 			children = (
+				31E0753B191FAB5B0085CD5B /* Resources */,
+				31E0753A191FAB470085CD5B /* CoreDataModel */,
+				31E07539191FAB170085CD5B /* View */,
 				31140ECC191F603900ACF7FB /* Settings.bundle */,
 				31140E87191F128900ACF7FB /* Diary */,
 				31140EA4191F128900ACF7FB /* DiaryTests */,
@@ -146,24 +149,9 @@
 		31140E87191F128900ACF7FB /* Diary */ = {
 			isa = PBXGroup;
 			children = (
-				31140EB4191F147100ACF7FB /* ZBCoreDataStack.h */,
-				31140EB5191F147100ACF7FB /* ZBCoreDataStack.m */,
-				31140EBF191F1FFE00ACF7FB /* ZBEntryListTableViewController.h */,
-				31140EC0191F1FFE00ACF7FB /* ZBEntryListTableViewController.m */,
 				31140E90191F128900ACF7FB /* ZBAppDelegate.h */,
 				31140E91191F128900ACF7FB /* ZBAppDelegate.m */,
-				31140E96191F128900ACF7FB /* Images.xcassets */,
-				31140E93191F128900ACF7FB /* Diary.xcdatamodeld */,
-				31140EB7191F179200ACF7FB /* ZBDiaryEntry.h */,
-				31140EB8191F179200ACF7FB /* ZBDiaryEntry.m */,
-				31140EBA191F199300ACF7FB /* MainStoryboard.storyboard */,
-				31140EC5191F3C2200ACF7FB /* ZBEntryCell.h */,
-				31140EC6191F3C2200ACF7FB /* ZBEntryCell.m */,
-				31140EBC191F1B1A00ACF7FB /* ZBEntryViewController.h */,
-				31140EBD191F1B1A00ACF7FB /* ZBEntryViewController.m */,
 				31140E88191F128900ACF7FB /* Supporting Files */,
-				31140EC2191F2F4800ACF7FB /* ZBNavigationController.h */,
-				31140EC3191F2F4800ACF7FB /* ZBNavigationController.m */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -195,6 +183,42 @@
 				31140EA7191F128900ACF7FB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31E07539191FAB170085CD5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				31140EC5191F3C2200ACF7FB /* ZBEntryCell.h */,
+				31140EC6191F3C2200ACF7FB /* ZBEntryCell.m */,
+				31140EBC191F1B1A00ACF7FB /* ZBEntryViewController.h */,
+				31140EBD191F1B1A00ACF7FB /* ZBEntryViewController.m */,
+				31140EC2191F2F4800ACF7FB /* ZBNavigationController.h */,
+				31140EC3191F2F4800ACF7FB /* ZBNavigationController.m */,
+				31140EBF191F1FFE00ACF7FB /* ZBEntryListTableViewController.h */,
+				31140EC0191F1FFE00ACF7FB /* ZBEntryListTableViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		31E0753A191FAB470085CD5B /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				31140EB7191F179200ACF7FB /* ZBDiaryEntry.h */,
+				31140EB8191F179200ACF7FB /* ZBDiaryEntry.m */,
+				31140EB4191F147100ACF7FB /* ZBCoreDataStack.h */,
+				31140EB5191F147100ACF7FB /* ZBCoreDataStack.m */,
+				31140E93191F128900ACF7FB /* Diary.xcdatamodeld */,
+			);
+			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		31E0753B191FAB5B0085CD5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				31140E96191F128900ACF7FB /* Images.xcassets */,
+				31140EBA191F199300ACF7FB /* MainStoryboard.storyboard */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -502,6 +526,7 @@
 				31140EB0191F128900ACF7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31140EB1191F128900ACF7FB /* Build configuration list for PBXNativeTarget "DiaryTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +535,7 @@
 				31140EB3191F128900ACF7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -520,7 +546,8 @@
 				31140E94191F128900ACF7FB /* Diary.xcdatamodel */,
 			);
 			currentVersion = 31140E94191F128900ACF7FB /* Diary.xcdatamodel */;
-			path = Diary.xcdatamodeld;
+			name = Diary.xcdatamodeld;
+			path = Diary/Diary.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

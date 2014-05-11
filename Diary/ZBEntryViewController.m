@@ -13,19 +13,21 @@
 
 @interface ZBEntryViewController () <UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate>
 
+//地理信息
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSString *location;
 
+//正文、图片、表情
 @property (weak, nonatomic) IBOutlet UITextView *textView;
-
 @property (nonatomic, strong) UIImage *pickedImage;
-
 @property (nonatomic, assign) enum ZBDiaryEntryMood pickedMood;
 
+//增强式键盘
 @property (weak, nonatomic) IBOutlet UIButton *badButton;
 @property (weak, nonatomic) IBOutlet UIButton *averageButton;
 @property (weak, nonatomic) IBOutlet UIButton *goodButton;
 @property (strong, nonatomic) IBOutlet UIView *accessoryView;
+
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UIButton *imageButton;
 
@@ -81,10 +83,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)dismissSelf {
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
-}
-
+#pragma mark - CoreLocation initial
 - (void)loadLocation
 {
     self.locationManager = [[CLLocationManager alloc] init];
@@ -94,6 +93,7 @@
     [self.locationManager startUpdatingLocation];
 }
 
+#pragma mark - CoreLocationManager Delegate
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     [self.locationManager stopUpdatingLocation];
@@ -107,6 +107,7 @@
     }];
 }
 
+#pragma mark - 插入新数据
 - (void)insertDiaryEntry
 {
     ZBCoreDataStack *coreDataStack = [ZBCoreDataStack defaultStack];
@@ -119,6 +120,7 @@
     [coreDataStack saveContext];
 }
 
+#pragma mark - 更新数据
 - (void)updateDiaryEntry
 {
     self.entry.body = self.textView.text;
@@ -128,6 +130,18 @@
     [coreDataStack saveContext];
 }
 
+#pragma mark - 点击照片按钮
+- (IBAction)imageButtonWasPressed:(id)sender {
+    [self.view endEditing:YES];
+    
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        [self promptForSource];
+    } else {
+        [self promptForPhotoRoll];
+    }
+}
+
+#pragma mark - 选择照片来源
 - (void)promptForSource
 {
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
@@ -139,6 +153,7 @@
     [actionSheet showInView:self.view];
 }
 
+#pragma mark - ActionSheet Delegate
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex != actionSheet.cancelButtonIndex) {
@@ -150,6 +165,7 @@
     }
 }
 
+#pragma mark - 照相
 - (void)promptForCamera
 {
     UIImagePickerController *controller = [[UIImagePickerController alloc] init];
@@ -158,6 +174,7 @@
     [self presentViewController:controller animated:YES completion:nil];
 }
 
+#pragma mark - 相册
 - (void)promptForPhotoRoll
 {
     UIImagePickerController *controller = [[UIImagePickerController alloc] init];
@@ -166,6 +183,18 @@
     [self presentViewController:controller animated:YES completion:nil];
 }
 
+- (void)setPickedImage:(UIImage *)pickedImage
+{
+    _pickedImage = pickedImage;
+    
+    if (pickedImage == nil) {
+        [self.imageButton setImage:[UIImage imageNamed:@"icn_noimage"] forState:UIControlStateNormal];
+    } else {
+        [self.imageButton setImage:pickedImage forState:UIControlStateNormal];
+    }
+}
+
+#pragma mark - ImagePicker Delegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage *image = info[UIImagePickerControllerOriginalImage];
@@ -177,6 +206,19 @@
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - 选择表情
+- (IBAction)badWasPressed:(id)sender {
+    self.pickedMood = ZBDiaryEntryMoodBad;
+}
+
+- (IBAction)averageWasPressed:(id)sender {
+    self.pickedMood = ZBDiaryEntryMoodAverage;
+}
+
+- (IBAction)goodWasPressed:(id)sender {
+    self.pickedMood = ZBDiaryEntryMoodGood;
 }
 
 - (void)setPickedMood:(enum ZBDiaryEntryMood)pickedMood
@@ -201,17 +243,7 @@
     }
 }
 
-- (void)setPickedImage:(UIImage *)pickedImage
-{
-    _pickedImage = pickedImage;
-    
-    if (pickedImage == nil) {
-        [self.imageButton setImage:[UIImage imageNamed:@"icn_noimage"] forState:UIControlStateNormal];
-    } else {
-        [self.imageButton setImage:pickedImage forState:UIControlStateNormal];
-    }
-}
-
+#pragma mark - BarButtonItem
 - (IBAction)doneWasPressed:(id)sender {
     if (self.entry != nil) {
         [self updateDiaryEntry];
@@ -226,25 +258,8 @@
     [self dismissSelf];
 }
 
-- (IBAction)badWasPressed:(id)sender {
-    self.pickedMood = ZBDiaryEntryMoodBad;
+- (void)dismissSelf {
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)averageWasPressed:(id)sender {
-    self.pickedMood = ZBDiaryEntryMoodAverage;
-}
-
-- (IBAction)goodWasPressed:(id)sender {
-    self.pickedMood = ZBDiaryEntryMoodGood;
-}
-
-- (IBAction)imageButtonWasPressed:(id)sender {
-    [self.view endEditing:YES];
-    
-    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        [self promptForSource];
-    } else {
-        [self promptForPhotoRoll];
-    }
-}
 @end
